@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GitHub, Linkedin } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import SocialLink from './SocialLink';
 
 interface HeaderProps {
@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({
           <nav className="flex items-center space-x-4">
             <SocialLink
               href={githubUrl}
-              icon={GitHub}
+              icon={Github}
               label="GitHub Profile"
             />
             <SocialLink
