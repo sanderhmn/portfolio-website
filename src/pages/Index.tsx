@@ -7,14 +7,13 @@ import Footer from '../components/Footer';
 const Index = () => {
   // These would typically come from a data store or CMS
   const personalInfo = {
-    name: "Your Name",
-    githubUrl: "https://github.com/yourusername",
-    linkedinUrl: "https://linkedin.com/in/yourusername",
+    name: "Sander",
+    githubUrl: "https://github.com/sanderhmn",
+    linkedinUrl: "https://linkedin.com/in/s",
     imageUrl: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=500&h=500",
     imageAlt: "Your profile picture",
-    introduction: "Hi, I'm a passionate developer with extensive experience in building web applications using modern technologies. I specialize in creating responsive, user-friendly interfaces with React and enjoy solving complex problems through clean, efficient code.",
-    email: "your.email@example.com",
-    phone: "+1 (555) 123-4567"
+    introduction: "Welcome to my personal page. This page is still under construction.",
+    email: "sander@example.com",
   };
 
   return (
@@ -22,7 +21,6 @@ const Index = () => {
       <Header 
         name={personalInfo.name}
         githubUrl={personalInfo.githubUrl}
-        linkedinUrl={personalInfo.linkedinUrl}
       />
       
       <main className="flex-grow">
@@ -37,7 +35,6 @@ const Index = () => {
       
       <Footer 
         email={personalInfo.email}
-        phone={personalInfo.phone}
       />
     </div>
   );

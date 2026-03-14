@@ -1,15 +1,13 @@
 
 import React from 'react';
-import { Mail, Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 interface FooterProps {
   email?: string;
-  phone?: string;
 }
 
 const Footer: React.FC<FooterProps> = ({
   email,
-  phone
 }) => {
   const currentYear = new Date().getFullYear();
   
@@ -27,14 +25,7 @@ const Footer: React.FC<FooterProps> = ({
               </div>
             )}
             
-            {phone && (
-              <div className="flex items-center gap-2">
-                <Phone size={16} />
-                <a href={`tel:${phone}`} className="hover:text-primary transition-colors">
-                  {phone}
-                </a>
-              </div>
-            )}
+            
           </div>
           
           <div className="text-sm text-muted-foreground">

@@ -6,13 +6,11 @@ import SocialLink from './SocialLink';
 interface HeaderProps {
   name: string;
   githubUrl: string;
-  linkedinUrl: string;
 }
 
 const Header: React.FC<HeaderProps> = ({
   name,
   githubUrl,
-  linkedinUrl
 }) => {
   return (
     <header className="w-full py-6 px-4 md:px-6 animate-fade-in">
@@ -27,11 +25,7 @@ const Header: React.FC<HeaderProps> = ({
               icon={Github}
               label="GitHub Profile"
             />
-            <SocialLink
-              href={linkedinUrl}
-              icon={Linkedin}
-              label="LinkedIn Profile"
-            />
+            
           </nav>
         </div>
       </div>
