@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run deploy:root",
+    "deploy:root": "cp -r dist/* . && echo 'Build files copied to root for GitHub Pages'",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
