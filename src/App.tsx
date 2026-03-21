@@ -4,7 +4,7 @@ import Index from './components/Index'
 function App() {
 
   return (<>
-    <h1>My Portfolio</h1>
+    <h1>Lost in Lines</h1>
     <Index />
   </>)
 }
