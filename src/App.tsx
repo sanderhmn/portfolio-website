@@ -1,12 +1,17 @@
-import './App.css'
-import Index from './components/Index'
+import "./App.css";
+import PhotoGallery from "./components/PhotoGallery";
 
 function App() {
-
-  return (<>
-    <h1>Lost in Lines</h1>
-    <Index />
-  </>)
+  return (
+    <div className="app">
+      <header className="header">
+        <h1>Lost in Lines</h1>
+      </header>
+      <main className="gallery-container">
+        <PhotoGallery />
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
