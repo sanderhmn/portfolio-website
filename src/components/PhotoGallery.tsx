@@ -40,15 +40,14 @@ export default function PhotoGallery() {
                         alignItems: "center",
                         justifyContent: "center",
                         zIndex: 1000,
-                        cursor: "zoom-out",
+                        cursor: "default",
                         padding: "2rem",
                         boxSizing: "border-box",
                     }}
                 >
                     <img
                         src={selected.src}
-                        alt={selected.alt ?? ""}
-                        onClick={(e) => e.stopPropagation()}
+                        alt=""
                         style={{
                             maxWidth: "100%",
                             maxHeight: "100%",
