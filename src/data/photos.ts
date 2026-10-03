@@ -45,4 +45,9 @@ export const photos = [
         width: 894,
         height: 1456,
     },
+    {
+        src: `https://pub-65ab48313db94c61bdcb580673295f2f.r2.dev/DSC02171.jpg`,
+        width: 4032,
+        height: 3024,
+    }
 ];

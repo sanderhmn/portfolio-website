@@ -1,12 +1,24 @@
 import { useState, useEffect } from "react";
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
-import { photos } from "../data/photos";
+import { getPhotos } from "../services/PhotoService";
 
-type Photo = (typeof photos)[number];
+type Photo = {
+    src: string;
+    width: number;
+    height: number;
+};
 
 export default function PhotoGallery() {
     const [selected, setSelected] = useState<Photo | null>(null);
+    const [photos, setPhotos] = useState([]);
+
+    useEffect(() => {
+        getPhotos().then((photos) => {
+            console.log(photos);
+            setPhotos(photos);
+        });
+    }, []);
 
     useEffect(() => {
         const handleKey = (e: KeyboardEvent) => {
